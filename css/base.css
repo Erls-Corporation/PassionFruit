@@ -1,0 +1,158 @@
+body {
+  background: transparent url('../images/bg_tile2.png') repeat 0 0;
+  border-top: 5px solid #333;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  padding: 25px 0;
+}
+
+h1 {
+  float: left;
+}
+
+p {
+  color: #666;
+  font-size: 24px;
+  font-family: "MuseoSans-100", arial, helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.inner {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 975px;
+}
+
+.logo {
+  background: transparent url('../images/logo.png') repeat 0 0;
+  display: block;
+  height: 60px;
+  float: left;
+  text-indent: -999em;
+  width: 308px;
+  margin-left: 50px;
+}
+
+header ul {
+  float: right;
+  overflow: hidden;
+}
+
+header ul li {
+  float: left;
+  list-style: none;
+}
+
+header ul .twitter a {
+  background: transparent url('../images/twitter.png') repeat 0 0;
+  display: block;
+  margin-right: 10px;
+  height: 22px;
+  width: 22px;
+}
+
+header ul .facebook a {
+  background: transparent url('../images/facebook.png') repeat 0 0;
+  display: block;
+  height: 22px;
+  margin-right: 10px;
+  width: 22px;
+}
+
+header ul .pintrest a {
+  background: transparent url('../images/pintrest.png') repeat 0 0;
+  display: block;
+  height: 22px;
+  width: 22px;
+}
+
+.content .inner {
+  box-shadow: 0px 1px 5px #e9e9e9, 0px -1px 5px #e9e9e9;
+  height: 340px;
+  background: #f4f9ef;
+  padding-top: 85px;
+  padding-left: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 925px;
+}
+
+.content .inner .left {
+  float: left;
+  width: 60%;
+}
+
+.content .inner .right {
+  float: right;
+  width: 40%;
+}
+
+h2 {
+  background: transparent url('../images/body_title_bg.png') no-repeat 0 0;
+  color: #fff;
+  font-family: "MuseoSans-100", arial, helvetica, sans-serif;
+  height: 60px;
+  margin: 0;
+  font-size: 45px;
+  text-align: center;
+  line-height: 75px;
+  text-transform: uppercase;
+  width: 273px;
+}
+
+.signup_link {
+  position: absolute;
+  left: 50px;
+  bottom: 35px;
+}
+
+.signup_link p {
+  color: #723293;
+  float: left;
+  font-family: "MuseoSans-500", arial, helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 33px;
+  margin: 0;
+}
+
+.signup_link a {
+  background: transparent url('../images/signup_bg.png') no-repeat 0 0;
+  color: #fff;
+  float: left;
+  font-family: "MuseoSans-500", arial, helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  display: block;
+  height: 29px;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 5px;
+  text-transform: uppercase;
+  line-height: 33px;
+  width: 185px;
+}
+
+/* FONTS */
+
+
+@font-face {
+  font-family: 'MuseoSans-100';
+  src: url('../fonts/museosans_100.eot');
+  src: url('../fonts/museosans_100.eot?#iefix') format('../fonts/embedded-opentype'), url('../fonts/museosans_100.woff') format('woff'),
+  url('../fonts/museosans_100.ttf') format('truetype'), url('../fonts/museosans_100.svg#museosans_100') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSans-500';
+  src: url('../fonts/museosans_500.eot');
+  src: url('../fonts/museosans_500.eot?#iefix') format('../fonts/embedded-opentype'), url('../fonts/museosans_500.woff') format('woff'),
+  url('../fonts/museosans_500.ttf') format('truetype'), url('../fonts/museosans_500.svg#museosans_500') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}		
