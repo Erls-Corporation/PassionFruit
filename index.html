@@ -5,14 +5,20 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
     <script src="js/jquery-1.8.1.min.js"></script>
-    <script src="js/jquery.jcarousel.min.js"></script>
-    <script src="js/slides.min.jquery.js"></script>
     <script>
-      $(function() {
-        $('#carousel').slides();
-      });
+      $(document).ready(function() {
+        $('.pager li a').click(function() {
+          var $clicked_index = $(this).parent().index();
+          $('.pager li').removeClass('active');
+          $('.pager li').eq($clicked_index).addClass('active');
+
+          $('#carousel > li').fadeOut('1000');
+          $('#carousel > li').eq($clicked_index).delay('400').fadeIn('500');
+
+          return false;
+        });
+      });  
     </script>
-    <!-- <script src="js/functions.js"></script> -->
     <title>Passion Fruit - Be Inspired!</title>
   </head>
 
@@ -21,14 +27,14 @@
       <div class="inner">
         <h1><a class="logo" href="/">Home</a></h1>
         <ul>
-          <li class="twitter"><a target="_blank" href="https://www.facebook.com/passionfruitme"></a></li>
-          <li class="facebook"><a target="_blank" href="http://twitter.com/passionfruitme"></a></li>
+          <li class="twitter"><a target="_blank" href="http://www.twitter.com/passionfruitme"></a></li>
+          <li class="facebook"><a target="_blank" href="https://facebook.com/passionfruitme"></a></li>
           <li class="pintrest"><a target="_blank" href="http://pinterest.com/passionfruitme/"></a></li>
         </ul>
       </div>
     </header>
     <ul id="carousel">
-    <li class="content one">
+    <li class="content one active">
       <div class="inner">
         <div class="left">
           <h2>Set Goals.</h2>
@@ -87,6 +93,14 @@
         </div>
       </div> 
     </li>
-
+    </ul>
+    <div class="pager_container">
+    <ul class="pager">
+      <li class="active"><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+    </div>
   </body>
 </html>
