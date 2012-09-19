@@ -126,10 +126,18 @@ h2 {
   margin: 0;
   font-size: 45px;
   font-weight: lighter;
-  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline;
+  padding-top: 7px;
   line-height: 70px;
   text-transform: uppercase;
 
+}
+
+h2 img {
+  position: relative;
+  top: 8px;
 }
 
 .signup_link {
