@@ -6,6 +6,19 @@
     <link rel="stylesheet" href="css/base.css">
     <script src="js/jquery-1.8.1.min.js"></script>
     <script src="js/functions.js"></script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33358033-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
     <title>Passion Fruit - Be Inspired!</title>
   </head>
 
@@ -14,9 +27,9 @@
       <div class="inner">
         <h1><a class="logo" href="/">Home</a></h1>
         <ul>
-          <li class="twitter"><a target="_blank" href="http://www.twitter.com/passionfruitme"></a></li>
-          <li class="facebook"><a target="_blank" href="https://facebook.com/passionfruitnetwork"></a></li>
-          <li class="pintrest"><a target="_blank" href="http://pinterest.com/passionfruitme/"></a></li>
+          <li class="twitter"><a target="_blank" onclick="_gaq.push(['_trackEvent', 'Twitter', 'clicked'])" href="http://www.twitter.com/passionfruitme"></a></li>
+          <li class="facebook"><a target="_blank" onclick="_gaq.push(['_trackEvent', 'Facebook', 'clicked'])" href="https://facebook.com/passionfruitnetwork"></a></li>
+          <li class="pintrest"><a target="_blank" onclick="_gaq.push(['_trackEvent', 'Pintrest', 'clicked'])" href="http://pinterest.com/passionfruitme/"></a></li>
         </ul>
       </div>
     </header>
@@ -27,7 +40,7 @@
           <h2>Set Goals.</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipis icing elit, sed do eiusmod tempor incididunt ut labore et dolore eiusmod tempo.</p>
           <div class="signup_link">
-            <p>Launching January 2013 </p> <a href="#">Request an invite >></a>
+            <p>Launching January 2013 </p> <a onclick="_gaq.push(['_trackEvent', 'Request an invite', 'clicked'])" href="#">Request an invite >></a>
           </div>
         </div>
         <div class="right">
@@ -42,7 +55,7 @@
           <h2>Share Passions.</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipis icing elit, sed do eiusmod tempor incididunt ut labore et dolore eiusmod tempo.</p>
           <div class="signup_link">
-            <p>Launching January 2013 </p> <a href="#">Request an invite >></a>
+            <p>Launching January 2013 </p> <a onclick="_gaq.push(['_trackEvent', 'Request an invite', 'clicked'])" href="#">Request an invite >></a>
           </div>
         </div>
         <div class="right">
@@ -57,7 +70,7 @@
           <h2>Be Inspired.</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipis icing elit, sed do eiusmod tempor incididunt ut labore et dolore eiusmod tempo.</p>
           <div class="signup_link">
-            <p>Launching January 2013 </p> <a href="#">Request an invite >></a>
+            <p>Launching January 2013 </p> <a onclick="_gaq.push(['_trackEvent', 'Request an invite', 'clicked'])" href="#">Request an invite >></a>
           </div>
         </div>
         <div class="right">
@@ -72,7 +85,7 @@
           <h2><img src="images/white_passion_fruit_text.png" alt="Passion Fruit!" /></h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipis icing elit, sed do eiusmod tempor incididunt ut labore et dolore eiusmod tempo.</p>
           <div class="signup_link">
-            <p>Launching January 2013 </p> <a href="#">Request an invite >></a>
+            <p>Launching January 2013 </p> <a onclick="_gaq.push(['_trackEvent', 'Request an invite', 'clicked'])" href="#">Request an invite >></a>
           </div>
         </div>
         <div class="right">
@@ -83,10 +96,10 @@
    </ul>
    <div class="pager_container">
     <ul class="pager">
-      <li class="active"><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
+      <li class="active"><a onclick="_gaq.push(['_trackEvent', 'Set Goals pager', 'clicked'])" href="#"></a></li>
+      <li><a onclick="_gaq.push(['_trackEvent', 'Share Passions pager', 'clicked'])" href="#"></a></li>
+      <li><a onclick="_gaq.push(['_trackEvent', 'Be Inspired pager', 'clicked'])" href="#"></a></li>
+      <li><a onclick="_gaq.push(['_trackEvent', 'Passion Fruit pager', 'clicked'])" href="#"></a></li>
     </ul>
     </div>
  
