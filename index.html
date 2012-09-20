@@ -5,20 +5,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
     <script src="js/jquery-1.8.1.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        $('.pager li a').click(function() {
-          var $clicked_index = $(this).parent().index();
-          $('.pager li').removeClass('active');
-          $('.pager li').eq($clicked_index).addClass('active');
-
-          $('#carousel > li').fadeOut('1000');
-          $('#carousel > li').eq($clicked_index).delay('400').fadeIn('500');
-
-          return false;
-        });
-      });  
-    </script>
+    <script src="js/functions.js"></script>
     <title>Passion Fruit - Be Inspired!</title>
   </head>
 
@@ -93,8 +80,8 @@
         </div>
       </div> 
     </li>
-    </ul>
-    <div class="pager_container">
+   </ul>
+   <div class="pager_container">
     <ul class="pager">
       <li class="active"><a href="#"></a></li>
       <li><a href="#"></a></li>
@@ -102,5 +89,6 @@
       <li><a href="#"></a></li>
     </ul>
     </div>
+ 
   </body>
 </html>
