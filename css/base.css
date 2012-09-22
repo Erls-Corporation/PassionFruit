@@ -203,6 +203,12 @@ h2 img {
 .pager li:hover a {
   background: transparent url('../images/scroller_dot_active.png') no-repeat 0 0;
 }
+
+.paypal {
+  margin: 10px auto 0 auto;
+  width: 960px;
+}
+
 /* FONTS */
 
 
